@@ -1,10 +1,9 @@
 function addToCart(cart, product) {
-  // Validate cart
+ 
   if (!Array.isArray(cart)) {
     throw new Error("Cart must be an array");
   }
 
-  // Validate product
   if (!product || product.id == null) {
     throw new Error("Invalid product");
   }
